@@ -1,0 +1,63 @@
+:root {
+    --body: #fafafa;
+    --defaultTextColor: #000000;
+    --white: #fff;
+    --primary: #3D8EDA;
+    --border-1: #DEDEDE;
+    --border-2: #EBEBEB;
+    --border-3: rgba(256, 256, 256, 0.2);
+    --inactive: #C8C7C7;
+    --inactive-2: #929292;
+    --placeholder: #636264;
+    /* tipografy */
+    --fontFamily: "Roboto", sans-serif;
+    --fontFamily-2: "Montserrat", sans-serif;
+    --h1Size: 48px;
+    --h2Size: 24px;
+    --h3Size: 20px;
+    --h4Size: 18px;
+    --h5Size: 16px;
+    --defaultRadius: 4px;
+    --otherRadius1: 2px;
+    --header-height: 172px;
+    --ico-size: 20px;
+    /* font-size */
+    --text--xs: 11px;
+    --text--sm: 12px;
+    --text--md: 13px;
+    --text--lg: 14px;
+    --text--xl: 15px;
+    --text--2xl: 16px;
+    /* gap */
+    --gap--xs: 6px;
+    --gap--sm: 10px;
+    --gap--md: 12px;
+    --gap--lg: 15px;
+    --gap--xl: 20px;
+    --defaultFontSize: var(--text--lg);
+    --defaultLineHeight: 150%;
+    /* sizes */
+    --size-xs: 24px;
+    --size-sm: 28px;
+    --size-md: 32px;
+    --size-lg: 34px;
+    /* icons */
+    --ico-size--xs: var(--size-xs);
+    --ico-size--sm: var(--size-sm);
+    --ico-size--md: var(--size-md);
+    --ico-size--lg: var(--size-lg);
+    /* buttons */
+    --btn-size--xs: var(--size-xs);
+    --btn-size--sm: var(--size-sm);
+    --btn-size--md: var(--size-md);
+    --btn-size--lg: var(--size-lg);
+    /* inputs */
+    --input-size--xs: var(--size-xs);
+    --input-size--sm: var(--size-sm);
+    --input-size--md: var(--size-md);
+    --input-size--lg: var(--size-lg);
+    
+    --shadow-1: 0 4px 24px 0 rgba(0, 0, 0, 0.12);
+    --shadow-2: 0 12px 24px 0 rgba(0, 0, 0, 0.12);
+
+}

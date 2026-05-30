@@ -1,0 +1,53 @@
+.btn {
+    border: 1px solid transparent;
+    font-size: var(--defaultFontSize);
+    line-height: var(--defaultLineHeight);
+    background-color: transparent;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    text-align: center;
+    --min-height: unset;
+    letter-spacing: -0.03em;
+    min-height: var(--min-height);
+    font-family: var(--fontFamily);
+}
+
+
+.btn--xs {
+    padding: 2px 6px;
+    --min-height: var(--btn-size--xs);
+    --ico-size: 16px;
+    font-size: var(--text--xs);
+}
+
+.btn--sm {
+    padding: 4px 12px;
+    --min-height: var(--btn-size--sm);
+    --ico-size: 14px;
+    font-size: var(--text--sm);
+}
+
+.btn--default {
+    background-color: transparent;
+    color: var(--inactive-2);
+    border-color: var(--inactive-2);
+}
+
+.btn--default:hover{
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn--square {
+    width: var(--min-height);
+    min-width: var(--min-height);
+    height: var(--min-height);
+    padding: 0;
+    flex: 0 0 var(--min-height);
+}
+

@@ -1,0 +1,48 @@
+@media (max-width: 1180px) {
+    
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 768px) {
+    
+}
+@media (max-width: 576px) {
+    :root{
+        --h2Size: 16px;
+        --gap--lg: 10px;
+        --text--lg: 12px;
+        --text--xl: 13px;
+        --text--2xl: 13px;
+        --ico-size: 16px;
+        --text--sm: 11px;
+        --text--md: 11px;
+    }
+    .flex-576{display: flex !important;}
+    .hidden-576{display: none !important;}
+    .form-group-range{gap: 10px;}
+    .btn-from-control{--ico-size: 16px;}
+    .btn-view-style{
+        --min-height: 20px; --ico-size: 16px;
+    }
+    .single-thumbnail{--size: 80px;}
+    .section {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+    .table-wrapper{--px: 12px;}
+    .table-photo{--size: 60px;}
+    .pill.pill--sm{
+        --pill-gap: 6px;
+        --pill-size: 22px;
+    }
+    .swiper-info .swiper-slide{
+        margin-right: 10px !important;
+    }
+}
+@media (min-width: 576px) {
+    .flex-576{display: none !important;}
+}
+@media (min-width: 768px) {
+    
+}

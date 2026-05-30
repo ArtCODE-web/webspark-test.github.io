@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/libs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/libs/air-datepicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/components/component.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-block">
+            <div class="container header-container">
+                <div class="header-row">
+                    <div class="header-grid header-grid--logo">
+                        <div class="custom-logo"><img src="img/logo.svg" alt=""></div>
+                    </div>
+                    <div class="header-grid">
+                        <div class="header-content">
+                            <div class="header-heading">
+                                <div class="header-content-item">
+                                    <div class="heading-row gap--lg overflow-hidden">
+                                        <h2 class="heading text-ellipsis">monblanproject</h2>
+                                        <div class="pill pill--sm pill-outline-primary">
+                                            <span class="pill-text">
+                                                Start on <span>17-02-2016</span>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="header-content-item">
+                                    <div class="swiper swiper-info">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <p class="text--lg"><span class="font-semi">870</span> posts</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text--lg"><span class="font-semi">11,787</span> followers</p>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <p class="text--lg"><span class="font-semi">112</span> following</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="header-content-item hidden-576">
+                                <div class="d-flex align-items-center flex-row gap--sm">
+                                    <label class="form-label">
+                                        <span class="form-label-text text--2xl">Date</span>
+                                    </label>
+                                    <div class="form-group-range airPickerRange">
+                                        <div class="form-input input input--sm w-max-162 airPickerRangeItem">
+                                            <input type="text" class="input" placeholder="from" id="input-from" readonly value="">
+                                            <div class="form-input-controls --appends">
+                                                <button type="button" class="btn btn--xs btn--square btn-from-control airPickerClear">
+                                                    <div class="ico"><img src="img/ico-close.svg"></div>
+                                                </button>
+                                                <button type="button" class="btn btn--xs btn--square btn-from-control airPickerShow">
+                                                    <div class="ico"><img src="img/ico-calendar.svg"></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="form-input input input--sm w-max-162 airPickerRangeItem">
+                                            <input type="text" class="input" id="input-to" placeholder="to" readonly value="">
+                                            <div class="form-input-controls --appends">
+                                                <button type="button" class="btn btn--xs btn--square btn-from-control airPickerClear">
+                                                    <div class="ico"><img src="img/ico-close.svg"></div>
+                                                </button>
+                                                <button type="button" class="btn btn--xs btn--square btn-from-control airPickerShow">
+                                                    <div class="ico"><img src="img/ico-calendar.svg"></div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    
+    <div class="wrapper header-fixed">
+        
+        <section class="section flex-auto">
+            <div class="container">
+                <div class="toggle-page-wrpr tabs">
+                    <div class="toggle-page-panel">
+                        
+                        <div class="flex-576 align-items-center flex-row gap--sm">
+                            <div class="form-group-range airPickerRange">
+                                <div class="form-input input input--sm airPickerRangeItem">
+                                    <input type="text" class="input" placeholder="from" readonly id="input-from" value="">
+                                    <div class="form-input-controls --appends">
+                                        <button type="button" class="btn btn--xs btn--square btn-from-control airPickerClear">
+                                            <div class="ico"><img src="img/ico-close.svg"></div>
+                                        </button>
+                                        <button type="button" class="btn btn--xs btn--square btn-from-control airPickerShow">
+                                            <div class="ico"><img src="img/ico-calendar.svg"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="form-input input input--sm airPickerRangeItem">
+                                    <input type="text" class="input" id="input-to" placeholder="to" readonly value="">
+                                    <div class="form-input-controls --appends">
+                                        <button type="button" class="btn btn--xs btn--square btn-from-control airPickerClear">
+                                            <div class="ico"><img src="img/ico-close.svg"></div>
+                                        </button>
+                                        <button type="button" class="btn btn--xs btn--square btn-from-control airPickerShow">
+                                            <div class="ico"><img src="img/ico-calendar.svg"></div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <ul class="toggle-page-nav">
+                            <li class="toggle-page-nav-li">
+                                <label class="control-view-group-element">
+                                    <input type="radio" name="view" id="cards" checked data-tab-button hidden>
+                                    <div class="btn btn--xs btn--square btn-view-style">
+                                        <span class="ico">
+                                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" 
+                                            xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="6" height="6" fill="currentColor"/>
+                                                <rect x="8" width="6" height="6" fill="currentColor"/>
+                                                <rect x="16" width="6" height="6" fill="currentColor"/>
+                                                <rect y="8" width="6" height="6" fill="currentColor"/>
+                                                <rect y="16" width="6" height="6" fill="currentColor"/>
+                                                <rect x="8" y="8" width="6" height="6" fill="currentColor"/>
+                                                <rect x="8" y="16" width="6" height="6" fill="currentColor"/>
+                                                <rect x="16" y="8" width="6" height="6" fill="currentColor"/>
+                                                <rect x="16" y="16" width="6" height="6" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                            <li class="toggle-page-nav-li">
+                                <label class="control-view-group-element">
+                                    <input type="radio" name="view" id="table" data-tab-button hidden>
+                                    <div class="btn btn--xs btn--square btn-view-style">
+                                        <span class="ico">
+                                            <svg width="24" height="22" viewBox="0 0 24 22" fill="none" 
+                                            xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="6" height="6" fill="currentColor"/>
+                                                <rect y="8" width="6" height="6" fill="currentColor"/>
+                                                <rect y="16" width="6" height="6" fill="currentColor"/>
+                                                <rect x="9" y="10" width="15" height="2" fill="currentColor"/>
+                                                <rect x="9" y="18" width="15" height="2" fill="currentColor"/>
+                                                <rect x="9" y="2" width="15" height="2" fill="currentColor"/>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="toggle-page-content">
+                        <div class="toggle-tab --active-tab" 
+                        data-tab-content="cards">
+                            <div class="table-wrapper">
+                                <div class="table-body scroll">
+                                    <table class="table" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-1.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/card-photo-1.jpg">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-2.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-3.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-4.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-5.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="p-0 w-0">
+                                                    <div class="table-photo card-thumbnail">
+                                                        <img src="img/photo-8.png">
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Today</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                        <div class="d-flex align-items-center gap--md">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="d-flex flex-column gap--xs">
+                                                        <p class="text--2xl">Image upload</p>
+                                                        <p class="text--lg">11-04-2016</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table-footer justify-content-center">
+                                    <button type="button" class="btn btn--sm btn--default 
+                                    radius-full more-button">
+                                        <span class="info ttu">LOAD MORE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="toggle-tab" 
+                        data-tab-content="table">
+                            <div class="table-wrapper">
+                                <div class="table-body">
+                                    <div class="row row-cards-1">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail"></div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-1.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/card-photo-1.jpg" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-2.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-3.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-4.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-5.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                                            <div class="card card-inside card-single">
+                                                <div class="card-thumbnail single-thumbnail">
+                                                    <img src="img/photo-8.png" alt="">
+                                                </div>
+                                                <div class="card-body gap--xs">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--2xl">Today</p>
+                                                        <p class="text--2xl">9-08-2016</p>
+                                                    </div>
+
+                                                    <div class="card-grid-row">
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">128</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-favorite.svg"></span> 
+                                                                <span class="text--lg">67</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">31</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-grid-col">
+                                                            <div class="d-flex align-items-center gap--xs">
+                                                                <span class="ico"><img src="img/ico-comment.svg"></span> 
+                                                                <span class="text--lg">22</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <div class="heading-row justify-content-between gap--sm">
+                                                        <p class="text--lg">Image upload</p>
+                                                        <p class="text--sm">11-04-2016</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-footer justify-content-center">
+                                    <button type="button" class="btn btn--sm btn--default 
+                                    radius-full more-button">
+                                        <span class="info ttu">LOAD MORE</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/libs/air-datepicker.min.js"></script>
+    <script src="js/libs/popper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+ 

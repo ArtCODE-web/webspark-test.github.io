@@ -1,0 +1,112 @@
+
+
+
+.form-label{
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap--xs);
+    font-style: normal;
+    align-items: center;
+}
+.form-label-text{
+    font-style: normal;
+    max-width: 100%;
+    width: max-content;
+}
+
+.input, .textarea{
+    width: 100%;
+    display: flex;
+    overflow: hidden !important;
+    --px-rounded: 5px; 
+    --py-rounded: 5px;
+    --size: auto;
+    --font-size: var(--text--md);
+    --bg-color: transparent;
+    --border-color: transparent;
+    --border-radius: var(--defaultRadius);
+    --color: var(--placeholder);
+    font-size: var(--font-size);
+    font-family: var(--fontFamily-2);
+    font-style: normal;
+    border-radius: var(--border-radius);
+    color: var(--color);
+    min-height: var(--size);
+    max-height: var(--size);
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    padding: var(--py-rounded) var(--px-rounded);
+}
+
+.form-input{
+    --px-rounded: 0px !important; 
+    --py-rounded: 0px !important;
+    width: 100%;
+    display: flex;
+    overflow: hidden !important;
+    --border-color: var(--border-1);
+    --bg-color: var(--white);
+    --border-radius: var(--defaultRadius);
+    --px-wrapper: 8px; --py-wrapper: 8px;
+}
+
+.form-input > .input{
+    border: none;
+    --bg-color: inherit;
+    --border-radius: 0;
+    padding-left: var(--px-wrapper);
+    padding-right: var(--px-wrapper);
+    padding-top: var(--py-wrapper);
+    padding-bottom: var(--py-wrapper);
+}
+.btn-from-control{
+   height: 100%;
+   --ico-size: 100%;
+}
+.form-input-controls{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background: var(--border-2);
+}
+.btn-from-control:not(:last-child){
+    border-right: 1px solid var(--border-color);
+}
+.form-input-controls.--appends{
+    border-left: 1px solid var(--border-color);
+}
+.form-input-controls.--prepends{
+    border-right: 1px solid var(--border-color);
+}
+
+.form-group-range{
+    display: flex; gap: 20px;
+    width: 100%; overflow: hidden;
+}
+.input::placeholder, .textarea::placeholder{
+    color: var(--placeholder) !important;
+}
+.textarea{
+    resize: vertical;
+    padding: var(--px-rounded);
+    max-height: max-content !important;
+}
+.input--sm{
+    --size: var(--size-sm);
+    --px-rounded: 10px; --py-rounded: 3px;
+    --font-size: var(--text--md);
+}
+.input--md{
+    --size: var(--size-md);
+    --px-rounded: 10px; --py-rounded: 3px;
+    --font-size: var(--text--md);
+}
+.input--custom{
+    --color: var(--white);
+    --bg-color: var(--card-bg);
+    --border-color: var(--card-border);
+}
+.input--custom:focus{
+    --border-color: var(--card-border-2);
+}

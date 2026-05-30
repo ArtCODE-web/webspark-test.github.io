@@ -1,0 +1,91 @@
+.header {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top: 0; left: 0;
+    z-index: 50;
+    height: var(--header-height);
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    background-color: transparent;
+    border-bottom: 1px solid var(--border-3);
+    background-color: rgba(255, 255, 255, 0.67);
+    box-shadow: var(--shadow-1), inset var(--shadow-2);
+}
+.header.header-scroll{
+    background-color: rgba(255, 255, 255, 1);
+}
+.header-block{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.header-container{
+    --width: 740px;
+}
+.header-row{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    --variable-PX: 10px;
+    --size-logo-grid: 25%;
+    margin-left: calc(var(--variable-PX) * -1);
+    margin-right: calc(var(--variable-PX) * -1);
+}
+.header-grid.header-grid--logo{
+    flex: 0 0 var(--size-logo-grid);
+}
+.header-grid{
+    overflow: hidden;
+    display: flex;
+    flex: auto;
+    padding-left: var(--variable-PX);
+    padding-right: var(--variable-PX);
+}
+.header-content{
+    overflow: hidden;
+    flex: auto;
+    gap: var(--gap--xl);
+    justify-content: center;
+}
+.header-heading{
+    overflow: hidden;
+    gap: var(--gap--lg);
+}
+.header-heading,
+.header-content,
+.header-content-item{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+  
+   
+}
+@media (max-width: 576px) {
+   
+    :root{--header-height: 80px;}
+    .custom-logo{--size: 65px !important;}
+    .header-grid.header-grid--logo {
+        flex: auto;
+        width: max-content;
+        max-width: max-content;
+    }
+    .header-row{--variable-PX: 6px;}
+}
